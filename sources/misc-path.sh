@@ -11,6 +11,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=/usr/local/bin:$PATH
+export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH="$HOME/.serverless/bin:$PATH"
@@ -19,3 +20,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+eval "$(pyenv init --path)"

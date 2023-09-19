@@ -14,28 +14,11 @@ alias killnode='kill -9 `ps auxwwwe | egrep " [n]ode .+ PWD=$PWD" | awk "{ print
 # Usage: `chrome https://www.bbc.co.uk/news`
 chrome() { /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app="$1" &> /dev/null; echo "Opened $1 in a new window!";}
 
-# Git
-alias ga="git add ."
-alias gs='git status;'
-alias gp="git push origin HEAD;"
-alias gpf="git push origin HEAD -f;"
-alias gpn="git push origin HEAD --no-verify;"
-alias gpnf="git push origin HEAD -f --no-verify;"
-gr() { git rebase -i -S HEAD~$1; }
+# Opens mitm web interface
+alias mitm="mitmweb --set web_port=8082 --ssl-insecure"
 
-# Lazy "chuck up on github" command
-alias moreit="ga; git commit -m \"🔧 Continue to implement and debug\" --no-verify; gpn"
+# Clears the terminal buffer entirely
+cb() { printf "\033[2J\033[3J\033[1;1H"; }
 
-# Create a commit with no content
-alias empty='git commit --allow-empty -S -m "Empty commit to force rebuild/rerun"'
-
-gco() { 
-    git commit -S -m "$*" --no-verify;
-}
-alias gcon="gco"
-
-# Open current repo in browser
-ghc() { 
-    open $(git config remote.origin.url | sed "s/git@\(.*\):\(.*\).git/https:\/\/\1\/\2/")/$1$2 
-}
-alias gh='ghc tree/$(git symbolic-ref --quiet --short HEAD )';
+# because pnpm is too many letters
+p() { pnpm $*; }
