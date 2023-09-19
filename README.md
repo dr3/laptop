@@ -13,3 +13,5 @@ This repo is cloned to `~/dev/laptop`
 2) Open a new terminal to run it
 
 3) Open iterm2 settings and set the default profile to `DrewDarkProfile`
+
+4) Import `./files/DrewPrimary.bttpreset` into Better touch tool.
