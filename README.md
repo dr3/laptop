@@ -14,4 +14,6 @@ This repo is cloned to `~/dev/laptop`
 
 3) Open iterm2 settings and set the default profile to `DrewDarkProfile`
 
+4) In iterm2 settings => appearance => theme => select compact
+
 4) Import `./files/DrewPrimary.bttpreset` into Better touch tool.
