@@ -177,7 +177,7 @@
     "BTTNotchBarNotchMenubarModeHideRightScrollable" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "4A9BC74F-CDF5-4A14-A54E-18E361F15733",
+  "BTTPresetUUID" : "37298A5E-B60D-411F-8533-AD07C7E04D95",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -510,7 +510,7 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1699055520.644814,
+          "BTTLastUpdatedAt" : 1699195117.342696,
           "BTTTriggerType" : 624,
           "BTTTriggerTypeDescription" : "Please Select a Trigger ",
           "BTTIsPureAction" : true,
@@ -551,28 +551,21 @@
           ],
           "BTTKeySequence" : {
             "BTTPauseBetween" : 0.29999999999999999,
-            "BTTKeyCount" : 6,
+            "BTTKeyCount" : 4,
             "BTTKeySequenceDownKeys" : [
               {
                 "BTTKEYCode" : 54,
                 "BTTKEYDown" : 1,
                 "BTTKEYOrderRelevant" : 1,
                 "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
+                "BTTKEYTime" : 720887872
               },
               {
                 "BTTKEYCode" : 54,
                 "BTTKEYDown" : 1,
                 "BTTKEYOrderRelevant" : 1,
                 "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
-              },
-              {
-                "BTTKEYCode" : 54,
-                "BTTKEYDown" : 1,
-                "BTTKEYOrderRelevant" : 1,
-                "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
+                "BTTKEYTime" : 720887872
               }
             ],
             "BTTKeySequenceMixedKeys" : [
@@ -581,53 +574,36 @@
                 "BTTKEYDown" : 1,
                 "BTTKEYOrderRelevant" : 1,
                 "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
+                "BTTKEYTime" : 720887872
               },
               {
                 "BTTKEYCode" : 54,
                 "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
-              },
-              {
-                "BTTKEYCode" : 54,
-                "BTTKEYDown" : 1,
-                "BTTKEYOrderRelevant" : 1,
-                "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
-              },
-              {
-                "BTTKEYCode" : 54,
-                "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
+                "BTTKEYTime" : 720887872
               },
               {
                 "BTTKEYCode" : 54,
                 "BTTKEYDown" : 1,
                 "BTTKEYOrderRelevant" : 1,
                 "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
+                "BTTKEYTime" : 720887872
               },
               {
                 "BTTKEYCode" : 54,
                 "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
+                "BTTKEYTime" : 720887872
               }
             ],
             "BTTKeySequenceUpKeys" : [
               {
                 "BTTKEYCode" : 54,
                 "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
+                "BTTKEYTime" : 720887872
               },
               {
                 "BTTKEYCode" : 54,
                 "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
-              },
-              {
-                "BTTKEYCode" : 54,
-                "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 720748288
+                "BTTKEYTime" : 720887872
               }
             ]
           }
