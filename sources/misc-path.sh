@@ -2,6 +2,7 @@
 # A wide variety of paths that I have needed in the past
 # Doesnt really do any harm so I havent cleaned it in a while.
 #
+export GPG_TTY=$(tty)
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
