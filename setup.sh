@@ -6,4 +6,4 @@ source ~/dev/laptop/sources/useful.sh;
 source ~/dev/laptop/sources/misc-path.sh;
 source ~/dev/laptop/sources/git-useful.sh;
 
-cd ~/dev;
+[[ "$PWD" != *dev* ]] && cd ~/dev;
