@@ -18,6 +18,12 @@ This repo is cloned to `~/dev/laptop`
 
 4) Import `./files/DrewPrimary.bttpreset` into Better touch tool.
 
+## Keep an eye on
+
+1) GPG   
+When configuring your gpg key, remember to add it to git   
+`git config --global user.signingkey <your key>`   
+
 ## Apps to install
 
 These are apps I install when setting up a laptop.
