@@ -5,9 +5,9 @@ from mitmproxy import http
 
 
 def request(flow: http.HTTPFlow) -> None:
-    if flow.request.pretty_url == "https://google.com/path":
+    if flow.request.pretty_url == "https://google.com/banana":
         flow.response = http.Response.make(
-            410,  # (optional) status code
+            404,  # (optional) status code
             b"{}",  # (optional) content
             {"Content-Type": "application/json"},  # (optional) headers
         )
