@@ -22,3 +22,5 @@ ghc() {
     open $(git config remote.origin.url | sed "s/git@\(.*\):\(.*\).git/https:\/\/\1\/\2/")/$1$2 
 }
 alias gh='ghc tree/$(git symbolic-ref --quiet --short HEAD )';
+
+alias gitclean='git clean -d -x -f';
