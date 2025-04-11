@@ -5,7 +5,6 @@ light() {
   sed -i -e 's/"workbench.colorTheme": ".*"/"workbench.colorTheme": "Default Light+"/g' "$HOME/Library/Application Support/Code/User/settings.json";
   dontrunmanuallylightIterm;
 }
-
 dark() {
   sed -i -e 's/"workbench.colorTheme": ".*"/"workbench.colorTheme": "Visual Studio Dark"/g' "$HOME/Library/Application Support/Code/User/settings.json";
   dontrunmanuallydarkIterm;
@@ -17,12 +16,13 @@ dark() {
 cat ~/dev/laptop/files/iterm-dynamic.json > ~/Library/Application\ Support/iTerm2/DynamicProfiles/drew.json
 
 
-
+#
+# Secret functions to set iTerm2 themes
+#
 dontrunmanuallylightIterm() {
   echo -e "\033]50;SetProfile=DrewLightProfile\a"
   clear;
 }
-
 dontrunmanuallydarkIterm() {
   echo -e "\033]50;SetProfile=DrewDarkProfile\a"
   clear;
