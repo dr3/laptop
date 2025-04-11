@@ -49,4 +49,7 @@ These are apps I install when setting up a laptop.
 [Discord](https://discord.com/download)   
 [NordVPN](https://nordvpn.com/download/mac/)   
 [Logi Options](https://www.logitech.com/en-gb/software/options.html)   
-[VLC](https://www.videolan.org/vlc/download-macosx.en_GB.html)   
+[VLC](https://www.videolan.org/vlc/download-macosx.en_GB.html) 
+[Xnapper](https://xnapper.com/)
+[Notion](https://www.notion.so/desktop)
+[DNS Switcher](https://mattmcneeney.github.io/DNSSwitcher/)
