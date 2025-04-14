@@ -2,11 +2,11 @@
 # Set VScode & Iterm colours
 #
 light() {
-  sed -i -e 's/"workbench.colorTheme": ".*"/"workbench.colorTheme": "Default Light+"/g' "$HOME/Library/Application Support/Code/User/settings.json";
+  sed -i -e 's/"workbench.colorTheme": ".*"/"workbench.colorTheme": "Default Light\+"/g' "$HOME/Library/Application Support/Code/User/settings.json";
   dontrunmanuallylightIterm;
 }
 dark() {
-  sed -i -e 's/"workbench.colorTheme": ".*"/"workbench.colorTheme": "Visual Studio Dark"/g' "$HOME/Library/Application Support/Code/User/settings.json";
+  sed -i -e 's/"workbench.colorTheme": ".*"/"workbench.colorTheme": "Default Dark\+"/g' "$HOME/Library/Application Support/Code/User/settings.json";
   dontrunmanuallydarkIterm;
 }
 
@@ -31,7 +31,7 @@ dontrunmanuallydarkIterm() {
 #
 # Set iTerm2 profile based on VScode theme
 #
-if grep -q Default Light+ "$HOME/Library/Application Support/Code/User/settings.json"; then
+if grep -q "Default Light+" "$HOME/Library/Application Support/Code/User/settings.json"; then
   dontrunmanuallylightIterm;
 else
   dontrunmanuallydarkIterm;
