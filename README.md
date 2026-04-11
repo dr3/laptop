@@ -22,7 +22,12 @@ This repo is cloned to `~/dev/laptop`
 
 1) GPG   
 When configuring your gpg key, remember to add it to git   
-`git config --global user.signingkey <your key>`   
+`git config --global user.signingkey <your key>` 
+
+2) Setup git
+
+`git config --global user.name "Drew McMillan"`
+`git config --global user.email drew@mcmill.co.uk`
 
 ## Apps to install
 
