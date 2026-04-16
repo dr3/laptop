@@ -16,7 +16,12 @@ This repo is cloned to `~/dev/laptop`
 
 4) In iterm2 settings => appearance => theme => select compact
 
-4) Import `./files/DrewPrimary.bttpreset` into Better touch tool.
+5) Import `./files/DrewPrimary.bttpreset` into Better touch tool.
+
+6) In VSCode tell copilot where to read instructions from
+
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/1ecca30c-a5b5-4521-937e-1d4623fcf519" />
+
 
 ## Keep an eye on
 
