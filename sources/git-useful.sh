@@ -6,6 +6,27 @@ alias gpn="git push origin HEAD --no-verify;"
 alias gpnf="git push origin HEAD -f --no-verify;"
 gr() { git rebase -i -S HEAD~$1; }
 
+# Checkout file from primary branch (main or master)
+gcm() {
+    local file="$1"
+    if [[ -z "$file" ]]; then
+        echo "Error: Please provide a file path" >&2
+        return 1
+    fi
+    
+    local primary_branch
+    if git rev-parse --verify main >/dev/null 2>&1; then
+        primary_branch="main"
+    elif git rev-parse --verify master >/dev/null 2>&1; then
+        primary_branch="master"
+    else
+        echo "Error: Could not find main or master branch" >&2
+        return 1
+    fi
+    
+    git checkout "$primary_branch" -- "$file" || return 1
+}
+
 # Lazy "chuck up on github" command
 alias moreit="ga; git commit -m \"🔧 Continue to implement and debug\" --no-verify; gpn"
 
@@ -21,6 +42,6 @@ alias gcon="gco"
 ghc() { 
     open $(git config remote.origin.url | sed "s/git@\(.*\):\(.*\).git/https:\/\/\1\/\2/")/$1$2 
 }
-alias gh='ghc tree/$(git symbolic-ref --quiet --short HEAD )';
+alias gho='ghc tree/$(git symbolic-ref --quiet --short HEAD )';
 
 alias gitclean='git clean -d -x -f';
