@@ -5,5 +5,7 @@ source ~/dev/laptop/sources/terminal.sh;
 source ~/dev/laptop/sources/useful.sh;
 source ~/dev/laptop/sources/misc-path.sh;
 source ~/dev/laptop/sources/git-useful.sh;
+source ~/dev/laptop/sources/claude.sh;
+source ~/dev/laptop/sources/trainline.sh;
 
 [[ "$PWD" != *dev* ]] && cd ~/dev;
