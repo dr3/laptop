@@ -39,3 +39,4 @@
 - Keep PR descriptions concise; avoid verbose tables, long motivation sections, or restating what the diff already shows
 - Before raising, ensure tests, linting, and typechecking all pass for the affected packages
 - Where `pnpm changeset` is available, run it to bump any changed packages before pushing
+- Ensure PR has no claude attribution in the description or co-author lines
