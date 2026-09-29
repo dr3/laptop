@@ -31,6 +31,7 @@
 - Use Conventional Commits (`feat:`, `fix:`, etc.)
 - Concise, imperative mood
 - No AI attribution or co-author lines
+- Run `--no-verify` on all commit/push commands that it can apply to
 
 ## Raising a PR
 
