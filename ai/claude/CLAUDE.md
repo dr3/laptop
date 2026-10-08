@@ -37,6 +37,7 @@
 
 - Use `gh` CLI to create and edit PRs — not MCP GitHub tools
 - In the `trainline-private` GitHub org, prefix PR titles with `[NO-JIRA] ` followed by the title starting with a capital letter
+- Always follow PR template if one exists for the repo.
 - Keep PR descriptions concise; avoid verbose tables, long motivation sections, or restating what the diff already shows
 - Before raising, ensure tests, linting, and typechecking all pass for the affected packages
 - Where `pnpm changeset` is available, run it to bump any changed packages before pushing
