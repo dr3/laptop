@@ -1,0 +1,58 @@
+---
+description: "General working practices, communication style, commits, PRs, and CI instructions"
+applyTo: "**"
+---
+
+# Working with Me
+
+## Stack & Tooling
+
+- Primary stack is TypeScript/Node.js — assume this unless a repo says otherwise
+- Use `pnpm` for installs, scripts, and workspace commands
+- Prefer strict typing; never use `any`
+- Prefer a functional style
+
+## Communication
+
+- Keep responses balanced: brief explanations alongside the changes, no filler
+- Ask clarifying questions before large or ambiguous changes
+
+## Code Changes
+
+- Match the existing patterns and conventions in the file and repo
+- Make minimal changes — no unrequested refactors or scope creep
+- Avoid adding comments unless they explain something the code can't
+- Prefer editing existing files over creating new ones
+- Don't create docs/markdown files unless asked
+
+## Testing & Checks
+
+- Write or update tests for the code you change
+- Run tests before finishing
+- Run lint and typecheck before finishing
+
+## Commits
+
+- Use Conventional Commits (`feat:`, `fix:`, etc.)
+- Concise, imperative mood
+- No AI attribution or co-author lines
+- Run `--no-verify` on all commit/push commands that it can apply to
+
+## Raising a PR
+
+- Use `gh` CLI to create and edit PRs — not MCP GitHub tools
+- In the `trainline-private` GitHub org, prefix PR titles with `[NO-JIRA] ` followed by the title starting with a capital letter
+- Always follow PR template if one exists for the repo
+- Keep PR descriptions concise; avoid verbose tables, long motivation sections, or restating what the diff already shows
+- Before raising, ensure tests, linting, and typechecking all pass for the affected packages
+- Where `pnpm changeset` is available, run it to bump any changed packages before pushing
+- Ensure PR has no claude attribution in the description or co-author lines
+
+## CI
+
+- When checking GitHub Action runs, use `gh` CLI — not MCP GitHub tools
+- When checking TeamCity, use the available env vars to authenticate requests (read-only tokens):
+  - Use `TANGO_TEAMCITY_TOKEN` for tango TeamCity
+  - Use `HYDRA_TEAMCITY_TOKEN` for hydra TeamCity
+  - Use `VULCAN_TEAMCITY_TOKEN` for vulcan TeamCity
+- If you need to retrigger a build, push an empty commit with `git commit --allow-empty -m "chore: retrigger build"` and then push it to the branch

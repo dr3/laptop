@@ -45,7 +45,9 @@
 
 # CI
 
+- When checking github action runs, use Use `gh` CLI — not MCP GitHub tools
 - When checking teamcity, use the available env vars to authenticate requests. These are read only tokens.
     - Use `TANGO_TEAMCITY_TOKEN` for tango teamcity
     - Use `HYDRA_TEAMCITY_TOKEN` for hydra teamcity
     - Use `VULCAN_TEAMCITY_TOKEN` for vulcan teamcity
+- If you need to retrigger a build, push an empty commit with `git commit --allow-empty -m "chore: retrigger build"` and then push it to the branch.
