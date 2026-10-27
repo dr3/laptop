@@ -42,3 +42,10 @@
 - Before raising, ensure tests, linting, and typechecking all pass for the affected packages
 - Where `pnpm changeset` is available, run it to bump any changed packages before pushing
 - Ensure PR has no claude attribution in the description or co-author lines
+
+# CI
+
+- When checking teamcity, use the available env vars to authenticate requests. These are read only tokens.
+    - Use `TANGO_TEAMCITY_TOKEN` for tango teamcity
+    - Use `HYDRA_TEAMCITY_TOKEN` for hydra teamcity
+    - Use `VULCAN_TEAMCITY_TOKEN` for vulcan teamcity
